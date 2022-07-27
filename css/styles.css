@@ -528,6 +528,15 @@ img {
   padding: 60px 0;
 }
 
+.flex-for-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-with-address {
+  margin-right: 70px;
+}
+
 .footer-logo {
   padding: 0;
   margin: 0;
@@ -565,4 +574,42 @@ img {
 
 .physical {
   color: var(--tertiary-text-color);
+}
+
+.footer-caller {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--tertiary-text-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-caller-list {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.footer-caller-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+}
+
+.footer-caller-link:hover,
+.footer-caller-link:focus {
+  background-color: var(--active-link-color);
+}
+
+.footer-caller-icon {
+  fill: var(--tertiary-text-color);
 }
