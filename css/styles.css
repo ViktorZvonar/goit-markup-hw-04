@@ -132,12 +132,21 @@ img {
 }
 .contact-list {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
 .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -148,6 +157,11 @@ img {
 .contact-item:hover,
 .contact-item:focus {
   color: var(--active-link-color);
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: currentColor;
 }
 
 .contact-name:not(:last-child) {
@@ -163,6 +177,13 @@ img {
 
 .hero {
   padding: 200px 0;
+  margin: auto;
+  width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-hero/bg-hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -192,6 +213,7 @@ img {
   color: var(--tertiary-text-color);
   background-color: var(--active-link-color);
   cursor: pointer;
+  border: transparent;
   border-radius: 4px;
 }
 
@@ -213,8 +235,38 @@ img {
   width: 270px;
 }
 
+.benefit-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--tertiary-background-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .benefit-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.benefit-item:nth-child(1)::before {
+  background-image: url(../images/svg-optimised/antenna.svg);
+  background-size: 70px;
+}
+
+.benefit-item:nth-child(2)::before {
+  background-image: url(../images/svg-optimised/clock.svg);
+  background-size: 70px;
+}
+
+.benefit-item:nth-child(3)::before {
+  background-image: url(../images/svg-optimised/diagram.svg);
+  background-size: 70px;
+}
+
+.benefit-item:nth-child(4)::before {
+  background-image: url(../images/svg-optimised/astronaut.svg);
+  background-size: 70px;
 }
 
 .benefit-title {
@@ -224,6 +276,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .benefit-text {
@@ -292,6 +345,7 @@ img {
 }
 
 .teem-member {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(18.75 / 16);
@@ -300,7 +354,6 @@ img {
   color: var(--primary-text-color);
 }
 .teem-member-text {
-  margin-top: 10px;
   font-size: 16px;
   line-height: calc(18.75 / 16);
   text-align: center;
@@ -309,7 +362,37 @@ img {
 }
 
 .teem-div {
-  padding: 30px 0;
+  padding: 30px 0 16px;
+}
+
+.teem-soc-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.teem-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teem-soc-link:hover,
+.teem-soc-link:focus {
+  background-color: var(--active-link-color);
+}
+
+.teem-soc-link:hover .teem-soc-icon,
+.teem-soc-link:focus .teem-soc-icon {
+  fill: #ffffff;
+}
+
+.teem-soc-icon {
+  fill: #afb1b8;
 }
 
 /* Строрінка Портфоліо */
