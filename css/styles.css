@@ -176,7 +176,7 @@ img {
 .hero {
   padding: 200px 0;
   margin: auto;
-  width: 1600px;
+  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-hero/bg-hero-img.jpg);
   background-repeat: no-repeat;
@@ -410,12 +410,6 @@ img {
 }
 
 .filter-button {
-  margin: 0 auto;
-  padding: 6px 22px;
-  border-radius: 4px;
-}
-
-.filter-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -425,12 +419,18 @@ img {
   color: var(--primary-text-color);
   background-color: var(--tertiary-background-color);
   border: 1px transparent;
+  border-radius: 4px;
   cursor: pointer;
+
+  margin: 0 auto;
+  padding: 6px 22px;
 }
+
 .filter-button:hover,
 .filter-button:focus {
   color: var(--tertiary-text-color);
   background-color: var(--active-link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .example-div {
@@ -450,6 +450,11 @@ img {
   background: var(--primary-background-color);
 
   flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.example-demo:hover,
+.example-demo:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .example-demo-link {
