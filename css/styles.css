@@ -321,17 +321,17 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
 
 .teem-div {
-  padding: 30px 0 16px;
+  padding: 30px 0;
 }
 
 .teem-soc-list {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 30px;
   gap: 10px;
 }
 
@@ -452,12 +452,13 @@ img {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.example-demo:hover,
-.example-demo:focus {
+.example-demo-link:hover,
+.example-demo-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .example-demo-link {
+  display: block;
   text-decoration: none;
 }
 
